@@ -1,0 +1,143 @@
+.red{
+    background-color: lightcoral;
+}
+
+.hand{
+    cursor: pointer;
+}
+
+.dlt-IsEnable{
+    display: none;
+}
+
+.update-IsEnable{
+    display: none;
+}
+.add-IsEnable{
+    display: none;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #526D82;;
+}
+#todo-form{
+    width: 800px;
+    background-color: #9DB2BF;
+    padding: 0px 30px 30px 30px;
+    border-radius: 20px;
+    /* margin-left: 320px; */
+    margin: 50px auto;
+}
+
+#todo-form h1{
+    text-align: center;
+    font-size: 80px;
+    margin: 0px;
+    padding-top: 20px;
+}
+
+.field {
+    display: flex;
+    border: 2px solid #526D82;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.field input , textarea , #id{
+    height: 28px;
+    padding-left: 10px;
+    width: 90%;
+    background-color: #9DB2BF;
+    border-color: #526D82;
+}
+#id{
+    margin: 0px;
+    padding: 2px;
+    padding-left: 10px;
+    border: 2px solid #526D82;
+}
+textarea{
+    height: 56px;
+}
+.field label{
+    width: 10%;
+}
+#initBtns{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+#initBtns div{
+    display: flex;
+    gap: 10px;
+}
+#initBtns button{
+    background-color: #235f8d;
+    color: white;
+}
+button{
+    height: 30px;
+    font-size: 16px;
+    border: 1px solid #526D82;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #9DB2BF;
+    color: black;
+}
+#delete{
+    background-color: lightcoral;
+}
+button:hover{
+    border: 2px solid #526D82;
+}
+table{
+    background-color: #9DB2BF;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#records{
+    width: fit-content;
+    margin: 5px auto;
+}
+#operations{
+    height: 100%;
+    display: flex;
+    gap: 5px;
+    margin: 5px;
+}
+#records td{
+    font-size: 20px;
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+#records th{
+    font-size: 24px;
+    padding: 5px;
+    border: 1px solid black;
+}
+#nameToSearch{
+    height: 30px;
+    border: 1px solid #526D82;
+    border-radius: 5px;
+}
+#totals{
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0px;
+    width: fit-content;
+    background-color: #9DB2BF;
+    margin-bottom: 20px;
+}
+p{
+    margin: 0px;
+}
+.fa-solid{
+    border: 1px solid black;
+    padding: 5px 25px;
+}

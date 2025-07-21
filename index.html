@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo-App</title>
+
+    <link rel="stylesheet" href="./assets/css/design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"> -->
+    <script src="./scripts/controller.js" type="module" async></script>
+</head>
+<body>
+    <div id="todo-form">
+        <h1>To Do App</h1>
+        <div class="field">
+            <label>Id</label>
+            <label id="id"></label>
+        </div>
+        <div class="field">
+            <label>Name</label>
+            <input id="name" type="text" placeholder="Type Name here">
+            <span id="name-error"></span>
+        </div>
+        <div class="field">
+            <label>Desc</label>
+            <textarea id="desc" rows="5" cols="30"></textarea>
+        </div>
+        <div class="field">
+            <label>Date</label>
+            <input id="date" type="date">
+        </div>
+        <div class="field">
+            <label>Time</label>
+            <input id="time" type="time">
+        </div>
+        <div class="field">
+            <label>Photo</label>
+            <input id="photo" type="url">
+        </div>
+        <div id="initBtns">
+            <div>
+                <button id="add">Add</button>
+                <button id="update" class="update-IsEnable">Update</button>
+                <button id="save">Save</button>
+            </div>
+            <button id="clearAll">Clear All</button>
+        </div>
+    </div>
+    
+    <div>
+        <div id="records">
+            <div id="totals">
+                <p>Total Records: <span id="total">0</span> , Marked Records: <span id="marked">0</span> , Unmarked Records: <span id="unmarked">0</span></p>
+            </div>
+        <div id="operations">
+            <button id="sortName">Sort By Name</button>
+            <button id="sortId">Sort By Id</button>
+            <div><input type="text" id="nameToSearch" placeholder="Search by name"><button id="searchName">Search</button></div>
+            <button id="delete" class="dlt-IsEnable">Delete</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Desc</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Photo</th>
+                    <th id="oper">Operations</th>
+                </tr>
+            </thead>
+            <tbody id="task-list">    
+            </tbody>
+        </table>
+        </div>
+    </div>
+    
+</body>
+</html>
