@@ -130,10 +130,10 @@ function addTask(){
     clearAllFields();
 }
 
-function printAllTasks(){
-    todoOperations.tasks.forEach(printTask);
-    computeTotal();
-}
+// function printAllTasks(){
+//     todoOperations.tasks.forEach(printTask);
+//     computeTotal();
+// }
 
 function printTask(task){
     const tbody = document.querySelector('#task-list');
@@ -149,6 +149,11 @@ function printTask(task){
     const td = tr.insertCell(index);
     td.appendChild(createIcon(task.id, toggleMarking, 'fa-trash'));
     td.appendChild(createIcon(task.id, editTask, 'fa-pen'));
+}
+
+function printAllTasks(){
+    todoOperations.tasks.forEach(printTask);
+    computeTotal();
 }
 
 function readFields() {
