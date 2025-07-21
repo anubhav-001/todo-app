@@ -152,8 +152,10 @@ function printTask(task){
 }
 
 function printAllTasks(){
-    todoOperations.tasks.forEach(printTask);
-    computeTotal();
+    if(todoOperations.tasks){
+       todoOperations.tasks.forEach(printTask);
+        computeTotal(); 
+    }
 }
 
 function readFields() {
