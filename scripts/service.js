@@ -1,15 +1,15 @@
 // logics of CRUD operations
 
 const todoOperations = {
-    // tasks:[],
-    tasks: (() => {
-    try {
-        const data = localStorage.getItem('localData');
-        return data ? JSON.parse(data) : [];
-    } catch {
-        return [];
-    }
-    })(),
+    tasks:[],
+    // tasks: (() => {
+    // try {
+    //     const data = localStorage.getItem('localData');
+    //     return data ? JSON.parse(data) : [];
+    // } catch {
+    //     return [];
+    // }
+    // })(),
     getTotal(){
         return this.tasks.length;
     },
